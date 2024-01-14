@@ -2,26 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --token-68e8bb38-c584-4d6a-bdc9-edc8ff84d6b5: rgb(15, 12, 11);
+    --token-5ee85e4e-038c-4523-bd1d-3fc8cd597d76: rgba(28, 23, 21, 0);
+    --token-dbf32d0d-f455-4311-87ec-e8a0aec48475: rgb(28, 23, 21);
+    --token-252101f2-ee22-4ee9-a2dc-c82752d85099: rgb(69, 14, 3);
+    --token-97503e91-4573-4515-b4f7-c79169362b0a: rgb(162, 38, 12);
+    --token-a2b4f957-afbf-4088-9480-d071ba7cf731: rgb(205, 48, 1);
+    --token-680f5157-c169-43ae-8a43-6a59750aca14: rgb(255, 72, 0);
+    --token-37a39277-d09c-4658-9802-216bb43b1dea: rgb(255, 98, 10);
+    --token-9d24f47f-c5d3-4537-acab-640a0124327b: rgb(255, 133, 50);
+    --token-8e31c792-a2b2-4310-85be-0353403e865c: rgb(15, 13, 11);
+    --token-47d29547-5a89-49b6-be7c-21159c249a4d: rgb(250, 249, 247);
+    --token-6ee59802-e3a0-4598-a88f-44eb5bdfbf7c: rgb(209, 206, 199);
+    --token-cc7207b5-20d8-4524-843a-150380cf0cc0: rgb(173, 168, 159);
+    --token-eb8c27e0-67a7-4528-8f45-dec76405f53e: rgb(129, 123, 111);
+    --token-83fec95e-4f58-458a-b5e8-a14863e4175e: rgb(94, 90, 79);
+    --token-d3edf28b-072b-4745-bce8-3d6684fa8ffd: rgb(129, 123, 111);
+    --token-1b8f7eee-546f-4ead-ae01-36b2231c1ba4: rgb(173, 168, 159);
+    --token-13d6c78b-3237-4948-b1b3-871755433e61: rgba(255, 255, 255, 0);
+    --token-77231509-6085-4caa-96f3-5f46f76f65f9: rgba(255, 255, 255, 0.05);
+    --token-936fd169-2ae1-4cd1-afc5-f74c79a2c1f5: rgba(255, 255, 255, 0.1);
+    --token-dcb44b1a-f024-42ff-b55a-b7cb608e18fd: rgba(255, 255, 255, 0.2);
+    --token-d835a577-21ca-419e-ba5a-cac37ae48cb3: rgba(255, 255, 255, 0.3);
+    --token-fe9938c4-a622-4c8c-9f14-34ae2c045dd3: rgba(255, 255, 255, 0.4);
+    --token-7508eb6d-f1cf-4af0-a70c-30216d788a33: rgba(0, 0, 0, 0.05);
+    --token-09128e68-11ca-4dca-93f9-252e3c8cf956: rgba(0, 0, 0, 0.1);
+    --token-a4c7dc9f-b4a2-4c77-af79-256e8a279e94: rgba(255, 72, 0, 0.08);
+    --token-ab05aa39-4c79-4b61-b210-f0e4728e3fa3: rgba(255, 72, 0, 0.16);
+    --token-ccb2cf9e-3e07-4d22-b1bd-06029e6f48ff: rgba(255, 72, 0, 0.24);
+    --token-1374aa49-d2d0-49ae-90b6-97066fe5092c: rgba(32, 30, 24, 0.32);
+    --token-03f6b4f6-6536-4400-9873-0a425902b22e: rgba(173, 168, 159, 0.24);
+    --token-e70699c6-13bd-40d1-a105-6fcd2ce5397d: rgba(70, 14, 4, 0.24);
+    --token-c410e873-ae6d-4625-add3-e9e8ac6d551c: rgba(255, 98, 10, 0.24);
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: var(
+    --token-68e8bb38-c584-4d6a-bdc9-edc8ff84d6b5,
+    rgb(15, 13, 11)
+  );
+  color: var(--token-47d29547-5a89-49b6-be7c-21159c249a4d, rgb(250, 249, 247));
 }
