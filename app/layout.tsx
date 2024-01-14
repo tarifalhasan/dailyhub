@@ -20,9 +20,11 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="flex  h-screen w-auto  flex-row   justify-start overflow-hidden p-0 relative">
           <Sidebar />
-          <main className="  p-4  sm:p-8  flex-1 flex flex-col rounded-lg bg-main i gap-8  overflow-hidden overflow-y-auto relative w-full will-change-transform justify-start h-screen">
+          <main className=" p-2  pl-0  flex-1 flex flex-col rounded-lg bg-main  relative  will-change-transform justify-start h-screen w-[1px]">
             <div className=" bg-main-border"></div>
-            {children}
+            <div className="flex-1 flex flex-col justify-start relative p-4 sm:p-8 gap-8  overflow-hidden overflow-y-auto w-full  will-change-transform h-[1px] flex-nowrap">
+              {children}
+            </div>
           </main>
         </div>
       </body>
