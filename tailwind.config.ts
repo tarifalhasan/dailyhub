@@ -9,7 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        backgrund: "var(--token-a2b4f957-afbf-4088-9480-d071ba7cf731)",
+        sidebar: "var(--sidebar-bg)",
+        main: "rgba(0, 0, 0, .05)",
+        skin: {
+          "gray-500": "rgb(173, 168, 159)",
+          "gray-600": "rgb(129, 123, 111)",
+          "gray-800": "rgb(28, 23, 21)",
+          "sidebar-border": "rgba(255, 255, 255, .05)",
+        },
       },
     },
   },

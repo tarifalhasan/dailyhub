@@ -46,3 +46,37 @@ body {
   );
   color: var(--token-47d29547-5a89-49b6-be7c-21159c249a4d, rgb(250, 249, 247));
 }
+
+@layer components {
+  .bg-main-border {
+    border-bottom-width: 1px;
+    border-color: var(
+      --token-77231509-6085-4caa-96f3-5f46f76f65f9,
+      rgba(255, 255, 255, 0.05)
+    );
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-style: solid;
+    border-top-width: 1px;
+    border-radius: 8px;
+    flex: none;
+    inset: 8px 8px 8px 0;
+    overflow: hidden;
+    overflow-y: auto;
+    pointer-events: none;
+    position: absolute;
+    will-change: var(--framer-will-change-override, transform);
+    z-index: 1;
+  }
+  .bg-main-border::after {
+    --border-bottom-width: 1px;
+    --border-color: var(
+      --token-77231509-6085-4caa-96f3-5f46f76f65f9,
+      rgba(255, 255, 255, 0.05)
+    );
+    --border-left-width: 1px;
+    --border-right-width: 1px;
+    --border-style: solid;
+    --border-top-width: 1px;
+  }
+}
