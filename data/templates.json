@@ -1,0 +1,64 @@
+[
+  {
+    "id": 1,
+    "slug": "/templates/dailyhub",
+    "publishedAt": "10 jun 2023",
+    "title": "DailyHub",
+    "description": "Elevate your design workflow with the DailyHub Framer template! This versatile and user-friendly template is crafted to enhance your Framer experience.",
+    "category": "inspiration",
+    "price": 69,
+    "feature_image": "https://framerusercontent.com/images/QDTX0bs9nNBCDLgMB5F7I01UAzE.jpg",
+    "slides_images": [
+      "https://framerusercontent.com/images/QDTX0bs9nNBCDLgMB5F7I01UAzE.jpg",
+      "https://framerusercontent.com/images/PYziu2p9IgZlBWGh9InwMNfykRw.jpg",
+      "https://framerusercontent.com/images/yotVVHKLglXZgGa3szTh8S78B0.jpg"
+    ],
+    "preview_url": "https://dailyhub.framer.website/",
+    "overviews": {
+      "title": "Elevate your design workflow with the DailyHub Framer template! This versatile and user-friendly template is crafted to enhance your Framer experience.",
+      "key_features": [
+        "Sleek Design: A modern and intuitive interface for seamless navigation.",
+        "Dynamic Components: Interactive elements to bring your designs to life.",
+        "Customization: Easily adapt and personalize to suit your project needs",
+        "Responsive Layout: Ensures a smooth user experience across devices.",
+        "Efficient Prototyping: Streamline your prototyping process with Framer."
+      ],
+      "sub_title": "Explore the power of DailyHub and revolutionize your design projects."
+    },
+    "pages": {
+      "total_pages": 18,
+      "cms_collection": 7
+    }
+  },
+  {
+    "id": 2,
+    "title": "Nexus AI    ",
+    "slug": "/templates/nextus-ai",
+    "publishedAt": "12 may 2023",
+    "description": "This template is crafted to empower you in effortlessly creating visually stunning web applications with unparalleled ease.",
+    "category": "Ai",
+    "price": 69,
+    "feature_image": "https://framerusercontent.com/images/2At1CLHhHxRQ2dkYpflxaNPW68.jpg",
+    "slides_images": [
+      "https://framerusercontent.com/images/2At1CLHhHxRQ2dkYpflxaNPW68.jpg",
+      "https://framerusercontent.com/images/plnr8hYmhNCjd6X0zxS5EiQ.jpg",
+      "https://framerusercontent.com/images/FdWD8utPZc4eAGGtnZ2H89VEFUA.jpg"
+    ],
+    "preview_url": "https://dailyhub.framer.website/",
+    "overviews": {
+      "title": "Discover the Nexus AI Framer Template, a dynamic solution that effortlessly combines the power of an AI Platform Marketing website (CMS) with the versatility of 7 collections, all wrapped in an elegant Dark Theme. This template is crafted to empower you in effortlessly creating visually stunning web applications with unparalleled ease.",
+      "key_features": [
+        "Flexibility: Adapt the template to your specific needs, whether you're creating a portfolio, blog, or business website.",
+        "Efficiency: Leverage the efficiency of Nexus AI for content creation and design guidance, streamlining your development process.",
+        "Visual Appeal: The elegant Dark Theme adds a touch of sophistication, creating a visually appealing and memorable user experience.",
+        "User-Centric Design: Crafted with the end user in mind, ensuring an intuitive and engaging journey through your web applications.",
+        "Innovation: Harness the power of Nexus AI to infuse creativity into your projects, setting your web applications apart from the rest."
+      ],
+      "sub_title": ""
+    },
+    "pages": {
+      "total_pages": 18,
+      "cms_collection": 7
+    }
+  }
+]

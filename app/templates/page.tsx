@@ -1,6 +1,6 @@
 import TemplateCard from "@/components/Shared/TemplateCard";
 import data from "@/data/templates.json";
-export default async function Home() {
+export default async function Templates() {
   return (
     <>
       <div className=" flex items-center justify-between">
