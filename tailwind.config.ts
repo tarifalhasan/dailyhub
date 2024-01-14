@@ -31,7 +31,7 @@ const config: Config = {
           "sidebar-border": "rgba(255, 255, 255, .05)",
           "orange-vivid": "rgb(255, 72, 0)",
           "orange-400": "rgb(255, 98, 10)",
-          
+
           // "orage-600":"rgb(255, 98, 10)"
           card: {
             DEFAULT: "rgba(32, 30, 24, 0)",
@@ -41,11 +41,11 @@ const config: Config = {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
+        background: "var(--background)",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          DEFAULT: "rgb(250, 249, 247)",
+          foreground: "#000",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",

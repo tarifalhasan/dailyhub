@@ -1,5 +1,5 @@
 "use client";
-
+import TemplateCard from "@/components/Shared/TemplateCard";
 import Breadcrumbs from "@/components/TemplateDetails/Breadcrumbs";
 import TemplateImagesCarusel from "@/components/TemplateDetails/SlidesImages";
 import dummyData from "@/data/templates.json";
@@ -121,6 +121,26 @@ const TemplateDetails = ({ params }: { params: { slug: string } }) => {
                 </ul>
               </div>
             </div>
+          </div>
+        </div>
+        <div>
+          <div className=" py-5 xl:py-8">
+            <h2 className=" text-2xl text-white font-normal">
+              You may also like
+            </h2>
+          </div>
+          <div className="grid  relative overflow-visible gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {dummyData &&
+              dummyData.map((item) => (
+                <TemplateCard
+                  title={item.title}
+                  feature_image={item.feature_image}
+                  slug={item.slug}
+                  category={item.category}
+                  price={item.price}
+                  key={item.id}
+                />
+              ))}
           </div>
         </div>
       </div>

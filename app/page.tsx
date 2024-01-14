@@ -1,4 +1,5 @@
 import TemplateCard from "@/components/Shared/TemplateCard";
+import SubmitAWebsiteModal from "@/components/common/SubmitAWebsiteModal";
 import data from "@/data/templates.json";
 export default async function Home() {
   return (
@@ -8,7 +9,7 @@ export default async function Home() {
           Templates
         </h2>
         <div className=" inline-flex items-center gap-3">
-          <button className=" btn  btn-primary ">Submit</button>
+          <SubmitAWebsiteModal />
           <button className=" hidden sm:inline-flex btn  btn-secondary text-black ">
             Remix template
           </button>

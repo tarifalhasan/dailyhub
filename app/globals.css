@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: rgb(15, 13, 11);
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -152,7 +152,7 @@ body {
     --border-top-width: 1px;
   }
   .btn {
-    @apply text-sm font-normal tracking-[0.01em] leading-[140%] rounded-full inline-flex items-center transition-all duration-300 gap-2 py-[6px] px-4 cursor-pointer;
+    @apply text-sm font-normal tracking-[0.01em] leading-[140%] rounded-full justify-center inline-flex items-center transition-all duration-300 gap-2 py-[6px] px-4 cursor-pointer;
   }
   .btn-primary {
     box-shadow: inset 0px -3px 4px -1px
@@ -206,4 +206,111 @@ article {
   text-decoration: var(--framer-text-decoration, none);
   line-height: var(--framer-line-height, 1.2em);
   text-align: var(--framer-text-alignment, start);
+}
+.active_sidebar {
+  background: linear-gradient(
+    180deg,
+    rgba(162, 228, 53, 0) 0%,
+    var(--token-680f5157-c169-43ae-8a43-6a59750aca14, rgb(162, 228, 53))
+      49.82638888888889%,
+    rgba(162, 228, 53, 0) 100%
+  );
+  opacity: 1;
+  height: 34px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: calc(50.00000000000002% - 34px / 2);
+  width: 1px;
+  flex: none;
+}
+.active_sidebar_2 {
+  height: 8px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: calc(47.50000000000002% - 8px / 2);
+  width: 8px;
+  background-color: var(
+    --token-680f5157-c169-43ae-8a43-6a59750aca14,
+    rgb(162, 228, 0)
+  );
+  filter: blur(20px);
+  opacity: 1;
+}
+.active_sidebar_3 {
+  height: 8px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: calc(47.50000000000002% - 8px / 2);
+  width: 24px;
+  background-color: var(
+    --token-680f5157-c169-43ae-8a43-6a59750aca14,
+    rgb(162, 228, 53)
+  );
+  filter: blur(24px);
+  opacity: 1;
+}
+
+.menu-icon {
+  cursor: pointer;
+  display: inline-block;
+
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.menu-icon .navicon {
+  background: #fff;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.menu-icon .navicon:before,
+.menu-icon .navicon:after {
+  background: #fff;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.menu-icon .navicon:before {
+  top: 5px;
+}
+
+.menu-icon .navicon:after {
+  top: -5px;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
 }
