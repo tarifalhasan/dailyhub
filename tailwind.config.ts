@@ -31,6 +31,7 @@ const config: Config = {
           "sidebar-border": "rgba(255, 255, 255, .05)",
           "orange-vivid": "rgb(255, 72, 0)",
           "orange-400": "rgb(255, 98, 10)",
+          
           // "orage-600":"rgb(255, 98, 10)"
           card: {
             DEFAULT: "rgba(32, 30, 24, 0)",

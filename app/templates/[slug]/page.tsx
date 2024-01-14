@@ -28,7 +28,7 @@ const TemplateDetails = ({ params }: { params: { slug: string } }) => {
       <div className=" flex flex-col gap-8 w-full max-w-[1280px] mx-auto ">
         <div className=" flex flex-col lg:flex-row  gap-6  justify-between  content-end lg:items-end overflow-visible relative w-full">
           <div className="flex  lg:max-w-[480px] flex-col gap-4">
-            <h2 className=" text-4xl font-normal tracking-[0.01em] leading-[110%]">
+            <h2 className=" text-white text-4xl font-normal tracking-[0.01em] leading-[110%]">
               {data?.title}
             </h2>
             <p>{data?.description}</p>
@@ -55,7 +55,9 @@ const TemplateDetails = ({ params }: { params: { slug: string } }) => {
         <div className="flex gap-5 flex-col lg:flex-row items-start flex-none justify-between overflow-visible w-full relative">
           <div className=" w-full gap-4 flex flex-col xl:max-w-[720px]">
             <div>
-              <h2 className=" text-2xl font-normal leading-[130%]">Overview</h2>
+              <h2 className="  text-2xl font-normal leading-[130%]">
+                Overview
+              </h2>
             </div>
             <p className=" text-sm text-[#ada89f] font-normal">
               {data?.description}
