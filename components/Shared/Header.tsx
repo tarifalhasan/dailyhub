@@ -2,6 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import { useState } from "react";
+import Logo from "../common/Logo";
 import SidebarSearchBar from "../common/SidebarSearchBar";
 import { SIDEBAR_SOURCE_ITEMS } from "./Sidebar";
 import SidebarItem from "./SidebarItem";
@@ -16,7 +17,7 @@ const Header = () => {
     <>
       <header className="flex h-[80px] px-4  header items-center justify-between fixed top-0 left-0 right-0  z-[999] border-b border-skin-sidebar-border">
         <div>
-          <h3>Dailyhub</h3>
+          <Logo />
         </div>
 
         <button onClick={toggleMenu}>

@@ -1,3 +1,5 @@
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -117,6 +119,7 @@ body {
     rgb(15, 13, 11)
   );
   color: var(--token-47d29547-5a89-49b6-be7c-21159c249a4d, rgb(250, 249, 247));
+  font-family: "SF Pro Display", sans-serif;
 }
 
 @layer components {
