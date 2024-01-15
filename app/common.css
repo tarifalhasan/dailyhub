@@ -19,3 +19,10 @@ html {
 
   border-radius: 100px;
 }
+.link-transition {
+  transition: background-color 1s ease;
+  background-color: rgba(32, 30, 24, 0);
+}
+.link-transition:hover {
+  background-color: rgb(32, 30, 24);
+}
