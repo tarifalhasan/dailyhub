@@ -12,7 +12,7 @@ export default function PageWrapper({ children }: { children: ReactNode }) {
           exit={{ opacity: 0, y: 15 }}
           transition={{ delay: 0.1 }}
         >
-          {children}
+          {children}  
         </motion.main>
       </AnimatePresence>
     </>

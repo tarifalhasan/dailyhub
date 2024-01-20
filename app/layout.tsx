@@ -1,6 +1,8 @@
 import Header from "@/components/Shared/Header";
 import Sidebar from "@/components/Shared/Sidebar";
 import PageWrapper from "@/components/page-wrapper";
+import NextTopLoader from "nextjs-toploader";
+
 import type { Metadata } from "next";
 import "./common.css";
 import "./globals.css";
@@ -40,14 +42,27 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.png" type="image/png" sizes="50" />
       </head>
       <body className="antialiased pageContent">
+        <NextTopLoader
+          color="#CC0000"
+          initialPosition={0.08}
+          crawlSpeed={200}
+          height={3}
+          crawl={true}
+          showSpinner={true}
+          easing="ease"
+          speed={200}
+          shadow="0 0 10px #2299DD,0 0 5px #CC0000"
+          template='<div class="bar" role="bar"><div class="peg"></div></div> 
+         <div class="spinner" role="spinner"><div class="spinner-icon"></div></div>'
+          zIndex={1600}
+          showAtBottom={false}
+        />
         <PageWrapper>
           <div className="flex  h-screen w-auto  flex-row   justify-start overflow-hidden p-0 relative">
             <div className=" lg:hidden">
               <Header />
             </div>
-
             <Sidebar className=" hidden lg:flex" />
-
             <main className=" p-2 pt-[80px]  lg:pt-0 pl-0  flex-1 flex flex-col rounded-lg bg-main  relative  z-10 will-change-transform justify-start h-screen w-[1px]">
               <div className=" bg-main-border hidden lg:block"></div>
               <div className="flex-1 flex flex-col justify-start relative p-4 sm:p-8 gap-8  overflow-hidden overflow-y-auto w-full  will-change-transform h-[1px] flex-nowrap">
